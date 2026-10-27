@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing – Ranex Design</title>
+<meta name="description" content="Clear deliverables, one-time fees. UI/UX and social media design pricing from Ranex Design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ee;--fg:#1a1a19;--muted:#77736b;--pill:#e7e3dc;--yellow:#ffff5f;--ease:cubic-bezier(.2,.8,.2,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px;height:100%}
+body{margin:0;min-height:100%;display:flex;flex-direction:column;background:var(--bg);color:var(--fg);font-family:'DM Sans',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--fg);outline-offset:3px;border-radius:12px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+nav{position:fixed;left:50%;top:calc(31px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:50}
+nav ul{position:relative;display:flex;align-items:center;gap:11px;margin:0;padding:8px;list-style:none;border-radius:999px;background:rgb(231 227 220/.9);box-shadow:0 4px 25px rgba(0,0,0,.05);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+nav .ind{position:absolute;left:0;top:8px;height:33px;border-radius:24px;background:var(--fg);transition:transform .42s cubic-bezier(.3,.9,.25,1),width .42s cubic-bezier(.3,.9,.25,1);pointer-events:none}
+nav li{position:relative}
+nav a{display:flex;align-items:center;justify-content:center;height:33px;padding:0 18px;font-size:1rem;font-weight:500;letter-spacing:-.02em;transition:color .3s;white-space:nowrap}
+nav a.on{color:#fff}nav a:not(.on):hover{color:var(--muted)}
+main{width:100%;max-width:1248px;margin:0 auto;overflow-x:clip}
+.ar,h1,h2,h3,.pr{font-family:Archivo,'DM Sans',sans-serif}
+.hero{display:flex;justify-content:center;padding:clamp(112px,16vw,192px) 24px clamp(56px,8vw,96px)}
+.hero .in{position:relative;width:100%;max-width:1000px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;background:transparent;padding:0;font-weight:500;letter-spacing:-.02em;font-size:1rem;color:var(--muted)}
+.eyebrow i{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 1.5px var(--fg);margin-right:10px}
+.eyebrow b{color:var(--fg);font-weight:700;margin-right:8px}
+h1{font-weight:700;font-size:clamp(2.5rem,8.4vw,6rem);line-height:1.02;letter-spacing:-.05em;margin:0}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}.wi{display:inline-block}
+.js .wi{transform:translateY(110%);animation:rise .9s var(--ease) forwards;animation-delay:calc(var(--i)*70ms + 150ms)}
+@keyframes rise{to{transform:none}}
+.hero p{margin:0;max-width:30em;font-size:clamp(1.05rem,2vw,1.375rem);line-height:1.6;text-wrap:balance;font-weight:500;letter-spacing:-.025em;color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:center}
+.btn{display:inline-flex;height:48px;align-items:center;padding:0 28px;border-radius:999px;background:var(--fg);color:#fff;font-weight:500;letter-spacing:-.02em;transition:opacity .3s}
+.btn:hover{opacity:.8}
+.btn.s{height:40px;padding:0 18px;font-size:.95rem}
+.btn.o{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1.5px rgb(26 26 25/.25)}
+.ul{font-weight:500;letter-spacing:-.02em;background:linear-gradient(var(--fg),var(--fg)) 0 100%/100% 2px no-repeat;transition:background-size .4s var(--ease);padding-bottom:2px}.ul:hover{background-size:0 2px;background-position:100% 100%}
+.sec{padding:clamp(64px,8vw,104px) 24px 0}
+.sec h2{font-size:clamp(2rem,5vw,3rem);line-height:1.05;letter-spacing:-.05em;font-weight:700;margin:0 0 12px}
+.sub{margin:0 0 36px;color:var(--muted);font-weight:500;letter-spacing:-.02em;font-size:1.125rem;line-height:1.6;max-width:38em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--pill);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;transition:transform .4s var(--ease)}
+.card.hot{background:var(--yellow)}
+.card h3{margin:0 0 22px;font-size:1.5rem;line-height:1.25;letter-spacing:-.03em;font-weight:700}
+.pr{font-size:3.4rem;line-height:1;letter-spacing:-.05em;font-weight:700}
+.inr{font-weight:700;letter-spacing:-.02em;margin-top:8px}
+.del{color:var(--muted);font-weight:500;letter-spacing:-.02em;margin-top:2px}
+.card.hot .del{color:#55553a}
+.card ul{list-style:none;margin:22px 0 26px;padding:20px 0 0;border-top:1px solid rgb(26 26 25/.15);display:grid;gap:10px;flex:1;font-weight:500;letter-spacing:-.02em;line-height:1.45}
+.card li{display:flex;gap:10px}.card li::before{content:"✓";font-weight:700}
+.ctas{display:flex;gap:8px;flex-wrap:wrap}
+.card .btn.o{box-shadow:inset 0 0 0 1.5px rgb(26 26 25/.3)}
+.list{display:grid;gap:12px}
+.item{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;background:var(--pill);border-radius:24px;padding:20px 26px;transition:transform .4s var(--ease)}
+.item b{display:block;font-family:Archivo,sans-serif;font-size:1.5rem;letter-spacing:-.03em;line-height:1.2}
+.item span{color:var(--muted);font-weight:500;letter-spacing:-.02em}
+.item .pr{font-size:2rem;text-align:right}.item .pr small{display:block;font-family:'DM Sans',sans-serif;font-size:.9rem;letter-spacing:-.02em;color:var(--muted);font-weight:700;margin-top:2px}
+.tag{display:inline-block;background:var(--yellow);border-radius:999px;padding:2px 10px;font-size:.8rem;font-weight:700;margin-left:8px;vertical-align:middle;letter-spacing:0;font-family:'DM Sans',sans-serif}
+.custom{margin-top:16px;border:1.5px dashed rgb(26 26 25/.25);border-radius:24px;padding:28px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.custom b{display:block;font-family:Archivo,sans-serif;font-size:1.5rem;letter-spacing:-.03em;margin-bottom:4px}
+.custom span{color:var(--muted);font-weight:500;letter-spacing:-.02em}
+.note{margin:0 0 40px;color:var(--muted);font-weight:500;font-size:.95rem;letter-spacing:-.01em}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--pill);border-radius:24px;padding:24px 22px 28px;transition:transform .4s var(--ease);font-weight:500;letter-spacing:-.02em;line-height:1.5}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--yellow);font-family:Archivo,sans-serif;font-weight:700;margin-bottom:28px;transition:transform .4s var(--ease)}
+@media (hover:hover){.card:hover,.item:hover,.steps li:hover{transform:translateY(-6px)}.steps li:hover::before{transform:rotate(20deg) scale(1.1)}}
+.marq{margin-top:clamp(72px,9vw,112px);overflow:hidden;white-space:nowrap;border-block:1px solid rgb(26 26 25/.12);padding:20px 0}
+.marq div{display:inline-flex;animation:mq 30s linear infinite}.marq:hover div{animation-play-state:paused}
+.marq span{font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.8rem,5vw,3.5rem);letter-spacing:-.04em;margin-right:.7em}.marq span:nth-child(even){color:var(--muted)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.contact{text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;padding:clamp(88px,11vw,136px) 24px 0}
+.contact h2{font-family:Archivo,sans-serif;font-size:clamp(2.5rem,7vw,6rem);line-height:1;letter-spacing:-.05em;font-weight:700;margin:0;max-width:11em}
+.contact p{margin:0;max-width:32em;font-size:1.125rem;line-height:1.75rem;font-weight:500;letter-spacing:-.025em;color:var(--muted)}
+.contact p a{color:var(--fg);border-bottom:2px solid var(--pill)}
+footer{width:100%;max-width:1248px;margin:0 auto;padding:96px 24px 160px;display:flex;flex-direction:column;gap:24px}
+footer hr{border:0;border-top:1px solid rgb(26 26 25/.12);width:100%;margin:0}
+.fg{display:grid;grid-template-columns:1fr;gap:40px 24px}
+.fg .cp{font-family:Archivo,sans-serif;font-size:1.5rem;line-height:2rem;font-weight:700;letter-spacing:-.05em;margin:0}
+.fg h4{margin:0 0 12px;font-size:1.125rem;font-weight:700;letter-spacing:-.02em}
+.fg ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.fg li a{font-size:1.125rem;line-height:1.75rem;font-weight:500;letter-spacing:-.02em;transition:color .3s}.fg li a:hover{color:var(--muted)}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease) var(--d,0ms),transform .8s var(--ease) var(--d,0ms)}
+.js .reveal.in{opacity:1;transform:none}
+@media (min-width:1024px){.fg{grid-template-columns:repeat(8,1fr)}.fg .a{grid-column:span 5}.fg .b{grid-column:span 2}.fg .c{grid-column:span 1}}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr;max-width:560px}.pr{font-size:3rem}}
+@media (max-width:720px){.item{grid-template-columns:1fr auto}.item .ctas{grid-column:1/-1}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}nav a{padding:0 12px;font-size:.95rem}nav ul{gap:4px}.sec{padding-top:80px}footer{padding:72px 24px 96px}.custom{padding:22px}}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.js .wi{transform:none;animation:none}.marq div{animation:none}html{scroll-behavior:auto}}
+/* type fixes */
+body{font-size:1rem;line-height:1.5;text-rendering:optimizeLegibility;font-synthesis:none}
+h1,h2,h3,.pr,.item b,.custom b,.fg .cp,.marq span{font-family:Archivo,'DM Sans',system-ui,sans-serif;font-feature-settings:'lnum' 1}
+.pr{font-variant-numeric:lining-nums tabular-nums;font-weight:700}
+.inr,.pr small,.del,.item span,.custom span,.sub,.note,.eyebrow,.btn,.ul,nav a,.steps li,.card li{font-family:'DM Sans',system-ui,-apple-system,sans-serif}
+.btn{font-size:1rem;font-weight:500;line-height:1;white-space:nowrap}.btn.s{font-size:.95rem}
+.card h3{font-size:1.5rem;font-weight:700;letter-spacing:-.03em}
+.card ul{font-size:1.0625rem}.item span{font-size:1.0625rem;line-height:1.5;display:block;margin-top:4px}
+.sub{font-size:1.125rem;line-height:1.6}.note{font-size:.95rem;line-height:1.5}
+.steps li{font-size:1.0625rem}
+.btn.y{background:var(--yellow);color:var(--fg);box-shadow:inset 0 0 0 1.5px var(--fg)}
+.btn .ar2{display:inline-block;margin-left:8px;transition:transform .3s var(--ease)}.btn:hover .ar2{transform:translate(2px,-2px)}
+/* cursor */
+#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;opacity:0;transition:opacity .3s;will-change:transform;mix-blend-mode:difference}
+#cur.on{opacity:1}
+#cur .cb{position:absolute;left:0;top:0;width:14px;height:14px;border-radius:999px;background:#fff;transform:translate(-50%,-50%) scale(var(--k,1));transition:width .45s var(--ease),height .45s var(--ease),background .3s,transform .3s var(--ease)}
+#cur.down{--k:.82}
+#cur[data-s=link]{mix-blend-mode:multiply}
+#cur[data-s=link] .cb{width:54px;height:54px;background:var(--yellow)}
+@media (hover:hover) and (pointer:fine){html.cur,html.cur *{cursor:none!important}}
+/* progress */
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;z-index:70;pointer-events:none}
+/* hero shapes */
+.hero{position:relative;isolation:isolate}
+.shape{position:absolute;z-index:-1;pointer-events:none;aspect-ratio:1;translate:calc(var(--mx,0)*34px) calc(var(--my,0)*34px);transition:translate 1s var(--ease)}
+.shape.g{width:clamp(150px,24vw,330px);left:3%;top:18%;border-radius:46% 54% 58% 42%/52% 44% 56% 48%;background:radial-gradient(circle at 30% 28%,#e4f9ec,#8fd8ae)}
+.shape.y{width:clamp(110px,18vw,250px);right:5%;top:48%;border-radius:55% 45% 42% 58%/46% 56% 44% 54%;background:radial-gradient(circle at 30% 28%,#ffffc2,var(--yellow))}
+.js .shape{opacity:0;animation:pop 1.1s var(--ease) .35s forwards,fl 9s ease-in-out 1.5s infinite}
+.js .shape.y{animation-delay:.5s,1.5s;animation-duration:1.1s,11s;animation-direction:normal,reverse}
+@keyframes pop{from{opacity:0;scale:.2}to{opacity:1;scale:1}}
+@keyframes fl{50%{transform:translateY(-22px) rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){.js .shape{opacity:1;animation:none}.shape{transition:none}.prog{display:none}}
+/* responsive layer */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a,button{-webkit-tap-highlight-color:transparent}
+.contact p a{overflow-wrap:anywhere}.fg li a{display:inline-block}
+@media (min-width:561px) and (max-width:1000px){.steps{grid-template-columns:repeat(6,1fr)}.steps li{grid-column:span 2}.steps li:nth-child(n+4){grid-column:span 3}}
+@media (min-width:600px) and (max-width:1023px){.fg{grid-template-columns:repeat(2,1fr)}.fg .a{grid-column:1/-1}}
+@media (min-width:768px) and (max-width:1023px){.sec,.hero,.contact,footer{padding-left:32px;padding-right:32px}}
+@media (max-width:767px){.sec .sub{margin-bottom:28px}.btn{height:50px}.btn.s{height:40px}.marq{margin-top:72px;padding:14px 0}.shape.g{width:clamp(110px,34vw,170px);left:-8%;top:14%}.shape.y{width:clamp(84px,26vw,130px);right:-6%;top:auto;bottom:4%}.js .shape{animation-name:popm,fl}@keyframes popm{from{opacity:0;scale:.2}to{opacity:.7;scale:1}}}
+@media (max-width:560px){nav{top:calc(14px + env(safe-area-inset-top,0px))}nav ul{padding:6px;gap:2px;max-width:calc(100vw - 20px)}nav .ind{top:6px;height:34px}nav a{height:34px;padding:0 11px;font-size:.9rem}.hero{padding-top:104px}.hero .in{gap:20px}.steps li{padding:22px 20px 24px}.steps li::before{margin-bottom:18px}.fg .cp{font-size:1.25rem}}
+@media (max-width:380px){h1,.contact h2{font-size:2.15rem}nav a{padding:0 8px;font-size:.84rem}.sec,.hero,.contact,footer{padding-left:18px;padding-right:18px}}
+@media (pointer:coarse){nav a{min-height:40px}nav .ind{height:40px}.fg li a{padding:6px 0}.ul{padding-block:8px}}
+@media (max-height:520px) and (orientation:landscape){.hero{padding-top:96px;padding-bottom:48px}nav{top:calc(10px + env(safe-area-inset-top,0px))}}
+@media (min-width:1600px){html{font-size:112.5%}main,footer{max-width:1400px}}
+/* all-device responsive */
+html,body{overflow-x:hidden}
+main,footer{padding-inline:env(safe-area-inset-left,0px) env(safe-area-inset-right,0px)}
+.card,.item>*,.custom>*,.steps li{min-width:0}
+.item b,.item span,.card h3,.card li{overflow-wrap:anywhere}
+@media (min-width:801px) and (max-width:1000px){.cards{grid-template-columns:repeat(3,1fr);max-width:none;gap:12px}.card{padding:24px 18px}.card h3{font-size:1.3rem}.pr{font-size:2.5rem}.card .ctas .btn{padding:0 14px}}
+@media (min-width:561px) and (max-width:800px){.cards{grid-template-columns:repeat(2,1fr);max-width:none}.cards .card:nth-child(3){grid-column:1/-1}}
+@media (max-width:900px){.item{grid-template-columns:1fr auto}.item .ctas{grid-column:1/-1}}
+@media (max-width:560px){.cards{max-width:none}}
+@media (max-width:480px){.hero .row,.contact .row{flex-direction:column;align-items:stretch;width:100%;max-width:340px}.hero .row .btn,.contact .row .btn{justify-content:center;width:100%}.hero .row .ul{text-align:center;align-self:center}.eyebrow{font-size:.9rem;text-align:center;justify-content:center}.card{padding:24px 20px}.pr{font-size:2.6rem}.ctas{width:100%}.ctas .btn{flex:1;justify-content:center}.item{padding:18px;gap:14px 16px}.item b{font-size:1.25rem}.item .pr{font-size:1.75rem}.custom{padding:20px}.custom .row{width:100%;flex-direction:column;align-items:stretch}.custom .btn{width:100%;justify-content:center}.custom .ul{text-align:center}.sub{font-size:1.0625rem}}
+@media (max-width:340px){.btn{padding:0 18px}.btn.s{padding:0 12px;font-size:.9rem}.item .pr{font-size:1.5rem}.pr{font-size:2.3rem}}
+</style>
+</head>
+<body>
+<div class="prog" id="prog" aria-hidden="true"></div>
+<nav aria-label="Main"><ul id="nav"><span class="ind" id="ind" aria-hidden="true"></span>
+<li><a href="#top" data-s="top" class="on">Pricing</a></li><li><a href="#uiux" data-s="uiux">UI/UX</a></li><li><a href="#social" data-s="social">Social</a></li><li><a href="#terms" data-s="terms">Terms</a></li></ul></nav>
+
+<main id="top">
+<section class="hero"><div class="shape g" aria-hidden="true"></div><div class="shape y" aria-hidden="true"></div><div class="in">
+<span class="eyebrow reveal"><i></i><b>Ranex Design</b> · Introductory pricing 2026</span>
+<h1 id="h1" aria-label="Pricing">Pricing</h1>
+<p class="reveal" style="--d:200ms">Clear deliverables, one-time fees. Message me on WhatsApp or email for the exact quote.</p>
+<div class="row reveal" style="--d:300ms"><a class="btn" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn y" href="https://ranexlabs.online" target="_blank" rel="noopener">View portfolio</a><a class="ul" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div>
+</div></section>
+
+<section id="uiux" class="sec">
+<h2 class="reveal">UI/UX &amp; website design</h2>
+<p class="sub reveal">Research-led interfaces with Figma prototypes and developer handoff.</p>
+<p class="note reveal">USD amounts are approximate (₹96.5 = $1) and may vary with the exchange rate. Indian clients are billed in INR.</p>
+<div class="cards" id="cards"></div>
+</section>
+
+<div class="marq" aria-hidden="true"><div><span>Landing Pages</span><span>Websites</span><span>Mobile Apps</span><span>Social Media</span><span>Figma</span><span>Design Systems</span><span>Landing Pages</span><span>Websites</span><span>Mobile Apps</span><span>Social Media</span><span>Figma</span><span>Design Systems</span></div></div>
+
+<section id="social" class="sec">
+<h2 class="reveal">Social media creatives</h2>
+<p class="sub reveal">Weekly and monthly packages of posts, stories and carousels for your brand.</p>
+<div class="list" id="list"></div>
+<div class="custom reveal"><div><b>Need a custom plan?</b><span>Packages can be adjusted for your content volume, brand and campaign scope.</span></div><div class="row"><a class="btn" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20a%20custom%20plan." target="_blank" rel="noopener">Ask for a custom quote</a><a class="ul" href="mailto:ranex.design@gmail.com?subject=Custom%20quote">or email</a></div></div>
+</section>
+
+<section id="terms" class="sec">
+<h2 class="reveal">Terms</h2>
+<p class="sub reveal">Simple, upfront, no surprises.</p>
+<ol class="steps">
+<li class="reveal">UI/UX: 50% advance, 50% before final handoff.</li>
+<li class="reveal" style="--d:80ms">Social media packages: full advance payment.</li>
+<li class="reveal" style="--d:160ms">Client provides content, copy, logos and images.</li>
+<li class="reveal" style="--d:240ms">Development, posting and account management are not included.</li>
+<li class="reveal" style="--d:320ms">Prices are introductory and may change with scope.</li>
+</ol>
+</section>
+
+<section id="contact" class="contact reveal">
+<h2>Have a project in mind?</h2>
+<p>Let’s create something meaningful together. Message me on WhatsApp or email to discuss it.</p>
+<div class="row"><a class="btn" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn y" href="https://ranexlabs.online" target="_blank" rel="noopener">View portfolio</a><a class="btn o" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div>
+<p style="font-size:1rem">No WhatsApp? Write to <a href="mailto:ranex.design@gmail.com">ranex.design@gmail.com</a></p>
+</section>
+</main>
+
+<footer><hr><div class="fg">
+<div class="a"><p class="cp">© 2026 Ranex Design</p></div>
+<div class="b"><h4>Site Map</h4><ul><li><a href="#uiux">UI/UX</a></li><li><a href="#social">Social media</a></li><li><a href="#terms">Terms</a></li><li><a href="https://ranexlabs.online" target="_blank" rel="noopener">Portfolio</a></li></ul></div>
+<div class="c"><h4>Contact</h4><ul><li><a href="https://wa.me/917740033296" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:ranex.design@gmail.com">Email</a></li></ul></div>
+</div></footer>
+
+<script>
+document.documentElement.classList.add('js');
+var WA='https://wa.me/917740033296?text=',ML='mailto:ranex.design@gmail.com?subject=';
+function ctas(n){var t='Hi, I would like to know the exact pricing for '+n+'.';
+return '<div class="ctas"><a class="btn s" href="'+WA+encodeURIComponent(t)+'" target="_blank" rel="noopener">WhatsApp</a><a class="btn s o" href="'+ML+encodeURIComponent('Pricing enquiry – '+n)+'&body='+encodeURIComponent(t)+'">Email</a></div>'}
+var ui=[['Landing Page Design','$52','₹4,999','4–5 days delivery',['Up to 5 sections','Desktop and mobile layouts','Wireframes, type and colour system','Figma prototype and handoff','2 revision rounds']],
+['Website UI/UX Design','$124','₹11,999','7–10 days delivery',['Up to 5 website pages','Desktop and mobile layouts','User flows and wireframes','High-fidelity UI and prototype','Basic design system','2 revision rounds, developer handoff'],1],
+['Mobile App UI/UX Design','$207','₹19,999','10–14 days delivery',['Up to 10 mobile screens','User flows and wireframes','High-fidelity UI and prototype','Basic design system','2 revision rounds, developer handoff']]];
+document.getElementById('cards').innerHTML=ui.map(function(c,i){return '<article class="card reveal'+(c[5]?' hot':'')+'" style="--d:'+i*100+'ms"><h3>'+c[0]+'</h3><div class="pr">'+c[1]+'</div><div class="inr">'+c[2]+' INR</div><div class="del">'+c[3]+'</div><ul>'+c[4].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+ctas(c[0])+'</article>'}).join('');
+var so=[['Basic Weekly','3 posts · 2 stories · 1 revision','$7','₹699'],['Standard Weekly','5 posts · 3 stories · 1 carousel · 2 revisions','$10','₹999'],['Basic Monthly','8 posts · 4 stories · 2 revisions','$26','₹2,499'],['Standard Monthly','12 posts · 8 stories · 2 carousels · 2 revisions','$41','₹3,999'],['Premium Monthly','16 posts · 12 stories · 4 carousels · 2 revisions','$62','₹5,999']];
+document.getElementById('list').innerHTML=so.map(function(s,i){return '<div class="item reveal" style="--d:'+i*60+'ms"><div><b>'+s[0]+'</b><span>'+s[1]+'</span></div><div class="pr">'+s[2]+'<small>'+s[3]+' INR</small></div>'+ctas(s[0])+'</div>'}).join('');
+(function(){var h=document.getElementById('h1'),i=0;
+[].slice.call(h.childNodes).forEach(function(n){if(n.nodeType!==3)return;var f=document.createDocumentFragment();
+n.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return}
+var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');var x=document.createElement('span');x.className='wi';x.style.setProperty('--i',i++);x.textContent=t;w.appendChild(x);f.appendChild(w)});
+n.parentNode.replaceChild(f,n)});})();
+(function(){
+var ind=document.getElementById('ind'),links=[].slice.call(document.querySelectorAll('nav a[data-s]')),cur=links[0];
+function sync(){var li=cur.parentNode;ind.style.width=li.offsetWidth+'px';ind.style.transform='translateX('+li.offsetLeft+'px)';links.forEach(function(l){l.classList.toggle('on',l===cur)})}
+sync();window.addEventListener('resize',sync);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sync);
+var ids=['top','uiux','social','terms'];
+window.addEventListener('scroll',function(){var y=window.scrollY+window.innerHeight*0.35,pick='top';
+ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top+window.scrollY<=y)pick=id});
+var a=links.filter(function(l){return l.dataset.s===pick})[0];if(a&&a!==cur){cur=a;sync()}},{passive:true});
+var els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});els.forEach(function(e){io.observe(e)})}
+else els.forEach(function(e){e.classList.add('in')});
+})();
+</script>
+<script>
+(function(){
+var fine=matchMedia('(hover:hover) and (pointer:fine)').matches,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var prog=document.getElementById('prog'),shapes=[].slice.call(document.querySelectorAll('.shape'));
+var mq=document.querySelector('.marq div'),anim=null;try{anim=mq&&mq.getAnimations&&mq.getAnimations()[0]}catch(e){}
+var x=-100,y=-100,tx=-100,ty=-100,started=false,cur=null,curState='',vel=0,lastY=scrollY,rate=1;
+if(fine){document.documentElement.classList.add('cur');cur=document.createElement('div');cur.id='cur';cur.setAttribute('aria-hidden','true');cur.innerHTML='<span class="cb"></span>';document.body.appendChild(cur)}
+function refresh(){if(!fine||!started)return;var el=document.elementFromPoint(tx,ty),s=el&&el.closest&&el.closest('a,button')?'link':'';if(s!==curState){curState=s;if(s)cur.setAttribute('data-s',s);else cur.removeAttribute('data-s')}}
+addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY;
+if(fine&&!started){x=tx;y=ty;started=true;cur.classList.add('on')}
+if(!rm){var nx=(tx/innerWidth)*2-1,ny=(ty/innerHeight)*2-1;shapes.forEach(function(s,i){var k=i?-1:1;s.style.setProperty('--mx',(nx*k).toFixed(3));s.style.setProperty('--my',(ny*k).toFixed(3))})}
+refresh()},{passive:true});
+document.addEventListener('mouseleave',function(){if(cur)cur.classList.remove('on')});
+document.addEventListener('mouseenter',function(){if(cur&&started)cur.classList.add('on')});
+addEventListener('mousedown',function(){if(cur)cur.classList.add('down')});
+addEventListener('mouseup',function(){if(cur)cur.classList.remove('down')});
+var mags=[];
+if(fine&&!rm){[].slice.call(document.querySelectorAll('.btn,.ul,nav li a,.fg li a')).forEach(function(el){
+if(getComputedStyle(el).display==='inline')el.style.display='inline-block';
+var o={el:el,cx:0,cy:0,tx:0,ty:0};mags.push(o);
+el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();o.tx=(e.clientX-(r.left+r.width/2))*.3;o.ty=(e.clientY-(r.top+r.height/2))*.4});
+el.addEventListener('mouseleave',function(){o.tx=0;o.ty=0})})}
+function onScroll(){var max=document.documentElement.scrollHeight-innerHeight;if(prog)prog.style.transform='scaleX('+(max>0?Math.min(scrollY/max,1):0)+')';vel=Math.abs(scrollY-lastY);lastY=scrollY;requestAnimationFrame(refresh)}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+(function loop(){
+if(cur){var k=rm?1:.2;x+=(tx-x)*k;y+=(ty-y)*k;cur.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)'}
+for(var i=0;i<mags.length;i++){var m=mags[i];m.cx+=(m.tx-m.cx)*.18;m.cy+=(m.ty-m.cy)*.18;if(Math.abs(m.cx)<.01&&m.tx===0)m.cx=0;if(Math.abs(m.cy)<.01&&m.ty===0)m.cy=0;m.el.style.translate=(m.cx||m.cy)?m.cx.toFixed(2)+'px '+m.cy.toFixed(2)+'px':''}
+if(anim&&!rm){var t=1+Math.min(vel*.12,6);rate+=(t-rate)*.08;anim.playbackRate=rate;vel*=.9}
+requestAnimationFrame(loop)})();
+})();
+</script>
+</body>
+</html>
