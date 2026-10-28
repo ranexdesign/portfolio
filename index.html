@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="theme-color" content="#f5f5f5">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Karan Saxena – UI/UX &amp; Graphic Designer</title>
 <meta name="description" content="UI/UX designer with a background design, creating intuitive, accessible, and meaningful digital experiences.">
@@ -246,96 +245,6 @@ nav ul{max-width:calc(100vw - 16px)}
 .txt .ink{align-self:flex-start}
 .ink-ready .w{overflow:visible}
 .ink-svg{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
-
-/* ===== Figma theme ===== */
-:root{--bg:#f5f5f5;--fg:#1e1e1e;--muted:#6b6b6b;--pill:#fff;--yellow:#a259ff;--fb:#0d99ff;--line:#e3e3e3}
-::selection{background:var(--fb);color:#fff}
-body{background-color:var(--bg);background-image:radial-gradient(#cfcfcf 1px,transparent 1.2px);background-size:22px 22px}
-/* toolbar nav */
-nav ul{background:#2c2c2c;border-radius:14px;gap:4px;box-shadow:0 8px 30px rgba(0,0,0,.18),0 0 0 1px rgba(255,255,255,.06) inset;backdrop-filter:none}
-nav .ind{background:var(--fb);border-radius:8px}
-nav a{color:#d6d6d6;border-radius:8px;font-size:.95rem;font-weight:500}
-nav a.on{color:#fff}
-nav a:not(.on):hover{color:#fff}
-/* multicolor progress like Figma's logo */
-.prog{background:linear-gradient(90deg,#f24e1e,#ff7262,#a259ff,#1abcfe,#0acf83)}
-/* frame labels */
-.sec::before{display:block;font-size:.8rem;font-weight:500;letter-spacing:0;color:var(--fb);margin-bottom:10px}
-#process::before{content:"Frame 02 / Process"}
-#about::before{content:"Frame 03 / About"}
-.work::before{content:"Frame 01 / Selected work";display:block;font-size:.8rem;font-weight:500;color:var(--fb);margin-bottom:12px}
-/* hero shapes as selected layers */
-.shape.g{border-radius:50%;background:#1abcfe}
-.shape.y{border-radius:18%;background:#a259ff}
-.shape.y::after,.card::after{content:"";position:absolute;inset:-6px;border:1.5px solid var(--fb);pointer-events:none;
- background:
-  linear-gradient(#fff,#fff) left 1px top 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) left top/8px 8px,
-  linear-gradient(#fff,#fff) right 1px top 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) right top/8px 8px,
-  linear-gradient(#fff,#fff) left 1px bottom 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) left bottom/8px 8px,
-  linear-gradient(#fff,#fff) right 1px bottom 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) right bottom/8px 8px;
- background-repeat:no-repeat}
-.shape.y::after{inset:-8px;border-radius:0}
-.card{position:relative}
-.card::after{inset:-8px;opacity:0;transition:opacity .25s}
-.card:focus-visible::after{opacity:1}
-@media (hover:hover){.card:hover::after{opacity:1}}
-/* frames */
-.media{border-radius:12px;box-shadow:0 0 0 1px var(--line)}
-.js .reveal .media{clip-path:inset(0 0 100% 0 round 12px)}
-.js .reveal.in .media{clip-path:inset(0 0 0 0 round 12px)}
-.media,.js .reveal.in .media{border-radius:12px}
-.veil{background:rgb(13 153 255/.12)}
-.badge path{fill:#a259ff}
-/* components */
-.steps li{background:#fff;border:1px solid var(--line);border-radius:12px}
-.steps li::before{color:#fff;border-radius:8px;background:var(--yellow)}
-.steps li:nth-child(1)::before{background:#f24e1e}
-.steps li:nth-child(2)::before{background:#ff7262}
-.steps li:nth-child(3)::before{background:#a259ff}
-.steps li:nth-child(4)::before{background:#1abcfe}
-.steps li:nth-child(5)::before{background:#0acf83}
-.skills li{background:#fff;border:1px solid var(--line);border-radius:8px}
-.skills li:hover{background:var(--fb);color:#fff;border-color:var(--fb)}
-.btn{background:var(--fb);border-radius:8px}
-.ul{background-image:linear-gradient(var(--fb),var(--fb))}
-.contact p a{border-bottom-color:var(--fb)}
-.marq{border-block-color:var(--line);background:#fff}
-.marq span:nth-child(5n+1){color:#f24e1e}.marq span:nth-child(5n+2){color:#a259ff}.marq span:nth-child(5n+3){color:#1abcfe}.marq span:nth-child(5n+4){color:#0acf83}.marq span:nth-child(5n){color:var(--fg)}
-footer hr{border-top-color:var(--line)}
-a:focus-visible{outline-color:var(--fb)}
-/* multiplayer-style cursor */
-#cur[data-s=link]{mix-blend-mode:normal}
-#cur[data-s=link] .cb{background:rgb(162 89 255/.9)}
-#cur[data-s=view] .cb{background:var(--fb);border-radius:4px 16px 16px 16px;box-shadow:0 6px 18px rgba(13,153,255,.35)}
-#cur .cl i{background:#fff;color:var(--fb)}
-
-/* ===== Figma theme v2 ===== */
-nav li.lg{display:grid;place-items:center;width:34px;height:33px;margin-left:4px}
-nav li.lg svg{width:14px;height:21px;display:block}
-.mc{position:absolute;z-index:3;pointer-events:none;display:flex;align-items:flex-start;animation:drift 7s ease-in-out infinite}
-.mc svg{width:18px;height:20px;flex:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.2))}
-.mc b{margin:14px 0 0 -2px;padding:3px 9px;border-radius:4px 12px 12px 12px;color:#fff;font:600 12px/1.4 Inter,system-ui,sans-serif;letter-spacing:0;white-space:nowrap}
-.mc.k{left:17%;top:40%}.mc.k b{background:#0d99ff}
-.mc.r{right:17%;bottom:20%;animation-delay:-3s;animation-direction:reverse}.mc.r b{background:#a259ff}
-@keyframes drift{50%{transform:translate(18px,-14px)}}
-@media (max-width:767px){.mc{display:none}}
-.dim{position:absolute;left:50%;bottom:-38px;translate:-50% 0;z-index:5;padding:2px 8px;border-radius:4px;background:var(--fb);color:#fff;font:500 12px/1.5 Inter,system-ui,sans-serif;letter-spacing:0;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s}
-.card:focus-visible .dim{opacity:1}
-@media (hover:hover){.card:hover .dim{opacity:1}}
-@media (prefers-reduced-motion:reduce){.mc{animation:none}}
-
-/* ===== Figma arrow cursor ===== */
-#cur,#cur[data-s=link],#cur[data-s=view]{mix-blend-mode:normal}
-#cur .cb,#cur[data-s=link] .cb{width:22px;height:24px;border-radius:0;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='24' viewBox='0 0 22 24'%3E%3Cpath d='M2 2l7.4 19 3-8 8-3z' fill='%23000' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0/22px 24px no-repeat;box-shadow:none;transform-origin:0 0;transform:scale(var(--k,1));filter:drop-shadow(0 1px 2px rgba(0,0,0,.25))}
-#cur[data-s=view] .cb{width:92px;height:40px;background:var(--fb);background-image:none;border-radius:4px 16px 16px 16px;transform:translate(14px,14px) scale(var(--k,1));box-shadow:0 6px 18px rgba(13,153,255,.35);filter:none}
-
-/* ===== all-device responsive (final pass) ===== */
-@media (max-width:480px){nav ul{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav ul::-webkit-scrollbar{display:none}}
-@media (max-width:320px){nav a{padding:0 6px;font-size:.78rem}nav ul{gap:0}h1,.hero h1,.contact h2{font-size:1.85rem}.sec h2{font-size:1.6rem}.pr{font-size:2rem}.work,.sec,.hero,.contact,footer{padding-left:14px;padding-right:14px}}
-@media (pointer:coarse){nav a{min-height:44px}nav .ind{height:44px}.btn,.btn.s{min-height:44px}.skills li{min-height:40px;display:inline-flex;align-items:center}.fg li a{padding:8px 0}}
-@media (hover:none){.work .card::after,.work .dim{display:none}}
-@media (min-width:2000px){html{font-size:137.5%}main,footer{max-width:1600px}}
-img,svg,video{max-width:100%}
 </style>
 </head>
 <body>
@@ -549,16 +458,6 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
   /* headline words are masked for the intro reveal; unmask afterwards so the ink can bleed outside the letters */
   var h1=document.getElementById('h1');
   if(h1)setTimeout(function(){h1.classList.add('ink-ready')},2000);
-})();
-</script>
-<script>
-(function(){
-  function size(c){var m=c.querySelector('.media'),d=c.querySelector('.dim');if(!m||!d)return;var r=m.getBoundingClientRect();d.textContent=Math.round(r.width)+' \u00d7 '+Math.round(r.height)}
-  [].slice.call(document.querySelectorAll('.card')).forEach(function(c){
-    var d=document.createElement('span');d.className='dim';d.setAttribute('aria-hidden','true');c.appendChild(d);
-    size(c);c.addEventListener('pointerenter',function(){size(c)});
-  });
-  addEventListener('resize',function(){[].slice.call(document.querySelectorAll('.card')).forEach(size)});
 })();
 </script>
 </body>
