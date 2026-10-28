@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pricing – Ranex Design</title>
+<title>Pricing</title>
 <meta name="description" content="Clear deliverables, one-time fees. UI/UX and social media design pricing from Ranex Design.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -101,13 +101,13 @@ h1,h2,h3,.pr,.item b,.custom b,.fg .cp,.marq span{font-family:'Inter',system-ui,
 .steps li{font-size:1.0625rem}
 .btn.y{background:var(--yellow);color:var(--fg);box-shadow:inset 0 0 0 1.5px var(--fg)}
 .btn .ar2{display:inline-block;margin-left:8px;transition:transform .3s var(--ease)}.btn:hover .ar2{transform:translate(2px,-2px)}
-/* cursor */
-#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;opacity:0;transition:opacity .3s;will-change:transform;mix-blend-mode:difference}
+/* ===== figma-style cursor ===== */
+#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;opacity:0;transition:opacity .15s;will-change:transform}
 #cur.on{opacity:1}
-#cur .cb{position:absolute;left:0;top:0;width:14px;height:14px;border-radius:999px;background:#fff;transform:translate(-50%,-50%) scale(var(--k,1));transition:width .45s var(--ease),height .45s var(--ease),background .3s,transform .3s var(--ease)}
-#cur.down{--k:.82}
-#cur[data-s=link]{mix-blend-mode:multiply}
-#cur[data-s=link] .cb{width:54px;height:54px;background:var(--yellow)}
+#cur .ar{position:absolute;left:0;top:0;width:30px;height:30px;min-width:30px;max-width:none;flex:none;display:block;overflow:visible;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));transform-origin:0 0;transition:transform .12s var(--ease)}
+#cur.down .ar{transform:scale(.86)}
+#cur .tag{position:absolute;left:22px;top:26px;padding:4px 11px;border-radius:8px;background:#0d99ff;color:#fff;font:600 14px/18px 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:0;white-space:nowrap;opacity:0;transform:translate(-4px,-4px) scale(.85);transform-origin:0 0;transition:opacity .15s,transform .2s var(--ease)}
+#cur[data-s] .tag{opacity:1;transform:none}
 @media (hover:hover) and (pointer:fine){html.cur,html.cur *{cursor:none!important}}
 /* progress */
 .prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;z-index:70;pointer-events:none}
@@ -145,6 +145,13 @@ main,footer{padding-inline:env(safe-area-inset-left,0px) env(safe-area-inset-rig
 @media (max-width:560px){.cards{max-width:none}}
 @media (max-width:480px){.hero .row,.contact .row{flex-direction:column;align-items:stretch;width:100%;max-width:340px}.hero .row .btn,.contact .row .btn{justify-content:center;width:100%}.hero .row .ul{text-align:center;align-self:center}.eyebrow{font-size:.9rem;text-align:center;justify-content:center}.card{padding:24px 20px}.pr{font-size:2.6rem}.ctas{width:100%}.ctas .btn{flex:1;justify-content:center}.item{padding:18px;gap:14px 16px}.item b{font-size:1.25rem}.item .pr{font-size:1.75rem}.custom{padding:20px}.custom .row{width:100%;flex-direction:column;align-items:stretch}.custom .btn{width:100%;justify-content:center}.custom .ul{text-align:center}.sub{font-size:1.0625rem}}
 @media (max-width:340px){.btn{padding:0 18px}.btn.s{padding:0 12px;font-size:.9rem}.item .pr{font-size:1.5rem}.pr{font-size:2.3rem}}
+
+/* ===== extra responsive safety net ===== */
+html{min-height:100dvh}
+img,video,canvas{max-width:100%}
+@media (max-width:340px){nav a{padding:0 6px!important;font-size:.78rem!important}nav ul{gap:0!important}}
+@media (min-width:2200px){html{font-size:125%}main,footer{max-width:1600px}}
+@media (max-width:767px){html{scroll-padding-top:84px}}
 </style>
 </head>
 <body>
@@ -154,7 +161,7 @@ main,footer{padding-inline:env(safe-area-inset-left,0px) env(safe-area-inset-rig
 
 <main id="top">
 <section class="hero"><div class="shape g" aria-hidden="true"></div><div class="shape y" aria-hidden="true"></div><div class="in">
-<span class="eyebrow reveal"> Introductory pricing 2026</span>
+<span class="eyebrow reveal"><b>Ranex Design</b> · Introductory pricing 2026</span>
 <h1 id="h1" aria-label="Pricing">Pricing</h1>
 <p class="reveal" style="--d:200ms">Clear deliverables, one-time fees. Message me on WhatsApp or email for the exact quote.</p>
 <div class="row reveal" style="--d:300ms"><a class="btn" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn y" href="https://ranexlabs.online" target="_blank" rel="noopener">View portfolio</a><a class="ul" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div>
@@ -221,7 +228,7 @@ n.parentNode.replaceChild(f,n)});})();
 (function(){
 var ind=document.getElementById('ind'),links=[].slice.call(document.querySelectorAll('nav a[data-s]')),cur=links[0];
 function sync(){var li=cur.parentNode;ind.style.width=li.offsetWidth+'px';ind.style.transform='translateX('+li.offsetLeft+'px)';links.forEach(function(l){l.classList.toggle('on',l===cur)})}
-sync();window.addEventListener('resize',sync);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sync);
+sync();window.addEventListener('resize',sync);window.addEventListener('orientationchange',sync);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sync);
 var ids=['top','uiux','social','terms'];
 window.addEventListener('scroll',function(){var y=window.scrollY+window.innerHeight*0.35,pick='top';
 ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top+window.scrollY<=y)pick=id});
@@ -237,12 +244,13 @@ var fine=matchMedia('(hover:hover) and (pointer:fine)').matches,rm=matchMedia('(
 var prog=document.getElementById('prog'),shapes=[].slice.call(document.querySelectorAll('.shape'));
 var mq=document.querySelector('.marq div'),anim=null;try{anim=mq&&mq.getAnimations&&mq.getAnimations()[0]}catch(e){}
 var x=-100,y=-100,tx=-100,ty=-100,started=false,cur=null,curState='',vel=0,lastY=scrollY,rate=1;
-if(fine){document.documentElement.classList.add('cur');cur=document.createElement('div');cur.id='cur';cur.setAttribute('aria-hidden','true');cur.innerHTML='<span class="cb"></span>';document.body.appendChild(cur)}
-function refresh(){if(!fine||!started)return;var el=document.elementFromPoint(tx,ty),s=el&&el.closest&&el.closest('a,button')?'link':'';if(s!==curState){curState=s;if(s)cur.setAttribute('data-s',s);else cur.removeAttribute('data-s')}}
+if(fine){document.documentElement.classList.add('cur');cur=document.createElement('div');cur.id='cur';cur.setAttribute('aria-hidden','true');cur.innerHTML='<svg class="ar" viewBox="0 0 325 325" aria-hidden="true"><path d="M0 0L325 120L175 175L120 325Z" fill="#231f20" stroke="#fff" stroke-width="20" stroke-linejoin="round"/></svg><span class="tag">Click</span>';document.body.appendChild(cur)}
+function refresh(){if(!fine||!started)return;var el=(arguments[0]&&arguments[0].nodeType===1)?arguments[0]:document.elementFromPoint(tx,ty),s=el&&el.closest&&el.closest('a,button')?'link':'';if(s!==curState){curState=s;if(s){cur.setAttribute('data-s',s);cur.querySelector('.tag').textContent=s==='view'?'Open ↗':'Click'}else cur.removeAttribute('data-s')}}
 addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY;
 if(fine&&!started){x=tx;y=ty;started=true;cur.classList.add('on')}
 if(!rm){var nx=(tx/innerWidth)*2-1,ny=(ty/innerHeight)*2-1;shapes.forEach(function(s,i){var k=i?-1:1;s.style.setProperty('--mx',(nx*k).toFixed(3));s.style.setProperty('--my',(ny*k).toFixed(3))})}
-refresh()},{passive:true});
+if(cur&&started){x=tx;y=ty;cur.style.transform='translate3d('+tx+'px,'+ty+'px,0)'}
+refresh(e.target)},{passive:true});
 document.addEventListener('mouseleave',function(){if(cur)cur.classList.remove('on')});
 document.addEventListener('mouseenter',function(){if(cur&&started)cur.classList.add('on')});
 addEventListener('mousedown',function(){if(cur)cur.classList.add('down')});
@@ -256,7 +264,7 @@ el.addEventListener('mouseleave',function(){o.tx=0;o.ty=0})})}
 function onScroll(){var max=document.documentElement.scrollHeight-innerHeight;if(prog)prog.style.transform='scaleX('+(max>0?Math.min(scrollY/max,1):0)+')';vel=Math.abs(scrollY-lastY);lastY=scrollY;requestAnimationFrame(refresh)}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 (function loop(){
-if(cur){var k=rm?1:.2;x+=(tx-x)*k;y+=(ty-y)*k;cur.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)'}
+if(cur){x=tx;y=ty;cur.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)'}
 for(var i=0;i<mags.length;i++){var m=mags[i];m.cx+=(m.tx-m.cx)*.18;m.cy+=(m.ty-m.cy)*.18;if(Math.abs(m.cx)<.01&&m.tx===0)m.cx=0;if(Math.abs(m.cy)<.01&&m.ty===0)m.cy=0;m.el.style.translate=(m.cx||m.cy)?m.cx.toFixed(2)+'px '+m.cy.toFixed(2)+'px':''}
 if(anim&&!rm){var t=1+Math.min(vel*.12,6);rate+=(t-rate)*.08;anim.playbackRate=rate;vel*=.9}
 requestAnimationFrame(loop)})();
@@ -264,4 +272,3 @@ requestAnimationFrame(loop)})();
 </script>
 </body>
 </html>
-
