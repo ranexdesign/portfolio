@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="theme-color" content="#f5f5f5">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Pricing – Ranex Design</title>
 <meta name="description" content="Clear deliverables, one-time fees. UI/UX and social media design pricing from Ranex Design.">
@@ -146,52 +145,6 @@ main,footer{padding-inline:env(safe-area-inset-left,0px) env(safe-area-inset-rig
 @media (max-width:560px){.cards{max-width:none}}
 @media (max-width:480px){.hero .row,.contact .row{flex-direction:column;align-items:stretch;width:100%;max-width:340px}.hero .row .btn,.contact .row .btn{justify-content:center;width:100%}.hero .row .ul{text-align:center;align-self:center}.eyebrow{font-size:.9rem;text-align:center;justify-content:center}.card{padding:24px 20px}.pr{font-size:2.6rem}.ctas{width:100%}.ctas .btn{flex:1;justify-content:center}.item{padding:18px;gap:14px 16px}.item b{font-size:1.25rem}.item .pr{font-size:1.75rem}.custom{padding:20px}.custom .row{width:100%;flex-direction:column;align-items:stretch}.custom .btn{width:100%;justify-content:center}.custom .ul{text-align:center}.sub{font-size:1.0625rem}}
 @media (max-width:340px){.btn{padding:0 18px}.btn.s{padding:0 12px;font-size:.9rem}.item .pr{font-size:1.5rem}.pr{font-size:2.3rem}}
-
-/* ===== Figma theme ===== */
-:root{--bg:#f5f5f5;--fg:#1e1e1e;--muted:#6b6b6b;--pill:#fff;--yellow:#a259ff;--fb:#0d99ff;--line:#e3e3e3}
-::selection{background:var(--fb);color:#fff}
-body{background-color:var(--bg);background-image:radial-gradient(#cfcfcf 1px,transparent 1.2px);background-size:22px 22px}
-nav ul{background:#2c2c2c;border-radius:14px;gap:4px;box-shadow:0 8px 30px rgba(0,0,0,.18),0 0 0 1px rgba(255,255,255,.06) inset;backdrop-filter:none}
-nav .ind{background:var(--fb);border-radius:8px}
-nav a{color:#d6d6d6;border-radius:8px;font-size:.95rem}
-nav a.on,nav a:not(.on):hover{color:#fff}
-.prog{background:linear-gradient(90deg,#f24e1e,#ff7262,#a259ff,#1abcfe,#0acf83)}
-.sec::before{display:block;font-size:.8rem;font-weight:500;color:var(--fb);margin-bottom:10px}
-#uiux::before{content:"Frame 01 / UI/UX"}#social::before{content:"Frame 02 / Social"}#terms::before{content:"Frame 03 / Terms"}
-.shape.g{border-radius:50%;background:#1abcfe}
-.shape.y{border-radius:18%;background:#a259ff}
-.shape.y::after,.card.hot::after{content:"";position:absolute;inset:-8px;border:1.5px solid var(--fb);pointer-events:none;background:
-  linear-gradient(#fff,#fff) left 1px top 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) left top/8px 8px,
-  linear-gradient(#fff,#fff) right 1px top 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) right top/8px 8px,
-  linear-gradient(#fff,#fff) left 1px bottom 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) left bottom/8px 8px,
-  linear-gradient(#fff,#fff) right 1px bottom 1px/6px 6px,linear-gradient(var(--fb),var(--fb)) right bottom/8px 8px;background-repeat:no-repeat}
-.card.hot{position:relative;background:#fff;box-shadow:0 0 0 1px var(--fb)}
-.card.hot .del{color:var(--muted)}
-.card,.item,.steps li{background:#fff;border:1px solid var(--line);border-radius:12px}
-.card.hot{border-color:var(--fb)}
-.custom{border-radius:12px;border-color:var(--fb);border-width:1.5px}
-.steps li::before{color:#fff;border-radius:8px}
-.steps li:nth-child(1)::before{background:#f24e1e}.steps li:nth-child(2)::before{background:#ff7262}.steps li:nth-child(3)::before{background:#a259ff}.steps li:nth-child(4)::before{background:#1abcfe}.steps li:nth-child(5)::before{background:#0acf83}
-.btn{background:var(--fb);border-radius:8px}
-.btn.o{background:transparent;color:var(--fg)}
-.btn.y{background:#a259ff;color:#fff;box-shadow:none}
-.tag{background:#a259ff;color:#fff;border-radius:4px}
-.ul{background-image:linear-gradient(var(--fb),var(--fb))}
-.contact p a{border-bottom-color:var(--fb)}
-.marq{border-block-color:var(--line);background:#fff}
-.marq span:nth-child(5n+1){color:#f24e1e}.marq span:nth-child(5n+2){color:#a259ff}.marq span:nth-child(5n+3){color:#1abcfe}.marq span:nth-child(5n+4){color:#0acf83}.marq span:nth-child(5n){color:var(--fg)}
-footer hr{border-top-color:var(--line)}
-a:focus-visible{outline-color:var(--fb)}
-#cur,#cur[data-s=link]{mix-blend-mode:normal}
-#cur .cb,#cur[data-s=link] .cb{width:22px;height:24px;border-radius:0;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='24' viewBox='0 0 22 24'%3E%3Cpath d='M2 2l7.4 19 3-8 8-3z' fill='%23000' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0/22px 24px no-repeat;transform-origin:0 0;transform:scale(var(--k,1));filter:drop-shadow(0 1px 2px rgba(0,0,0,.25))}
-
-/* ===== all-device responsive (final pass) ===== */
-@media (max-width:480px){nav ul{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav ul::-webkit-scrollbar{display:none}}
-@media (max-width:320px){nav a{padding:0 6px;font-size:.78rem}nav ul{gap:0}h1,.hero h1,.contact h2{font-size:1.85rem}.sec h2{font-size:1.6rem}.pr{font-size:2rem}.work,.sec,.hero,.contact,footer{padding-left:14px;padding-right:14px}}
-@media (pointer:coarse){nav a{min-height:44px}nav .ind{height:44px}.btn,.btn.s{min-height:44px}.skills li{min-height:40px;display:inline-flex;align-items:center}.fg li a{padding:8px 0}}
-@media (hover:none){.work .card::after,.work .dim{display:none}}
-@media (min-width:2000px){html{font-size:137.5%}main,footer{max-width:1600px}}
-img,svg,video{max-width:100%}
 </style>
 </head>
 <body>
@@ -201,7 +154,7 @@ img,svg,video{max-width:100%}
 
 <main id="top">
 <section class="hero"><div class="shape g" aria-hidden="true"></div><div class="shape y" aria-hidden="true"></div><div class="in">
-<span class="eyebrow reveal">  Introductory pricing 2026</span>
+<span class="eyebrow reveal"> Introductory pricing 2026</span>
 <h1 id="h1" aria-label="Pricing">Pricing</h1>
 <p class="reveal" style="--d:200ms">Clear deliverables, one-time fees. Message me on WhatsApp or email for the exact quote.</p>
 <div class="row reveal" style="--d:300ms"><a class="btn" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn y" href="https://ranexlabs.online" target="_blank" rel="noopener">View portfolio</a><a class="ul" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div>
@@ -210,7 +163,7 @@ img,svg,video{max-width:100%}
 <section id="uiux" class="sec">
 <h2 class="reveal">UI/UX &amp; website design</h2>
 <p class="sub reveal">Research-led interfaces with Figma prototypes and developer handoff.</p>
-<p class="note reveal">USD amounts are approximate (<span id="fx">₹96.5 = $1</span>).and may vary with the exchange rate. Indian clients are billed in INR.</p>
+<p class="note reveal">USD amounts are approximate (₹96.5 = $1) and may vary with the exchange rate. Indian clients are billed in INR.</p>
 <div class="cards" id="cards"></div>
 </section>
 
@@ -252,34 +205,14 @@ img,svg,video{max-width:100%}
 <script>
 document.documentElement.classList.add('js');
 var WA='https://wa.me/917740033296?text=',ML='mailto:ranex.design@gmail.com?subject=';
-function n(x){return String(x).replace(/\D/g,'')}
 function ctas(n){var t='Hi, I would like to know the exact pricing for '+n+'.';
 return '<div class="ctas"><a class="btn s" href="'+WA+encodeURIComponent(t)+'" target="_blank" rel="noopener">WhatsApp</a><a class="btn s o" href="'+ML+encodeURIComponent('Pricing enquiry – '+n)+'&body='+encodeURIComponent(t)+'">Email</a></div>'}
 var ui=[['Landing Page Design','$52','₹4,999','4–5 days delivery',['Up to 5 sections','Desktop and mobile layouts','Wireframes, type and colour system','Figma prototype and handoff','2 revision rounds']],
 ['Website UI/UX Design','$124','₹11,999','7–10 days delivery',['Up to 5 website pages','Desktop and mobile layouts','User flows and wireframes','High-fidelity UI and prototype','Basic design system','2 revision rounds, developer handoff'],1],
 ['Mobile App UI/UX Design','$207','₹19,999','10–14 days delivery',['Up to 10 mobile screens','User flows and wireframes','High-fidelity UI and prototype','Basic design system','2 revision rounds, developer handoff']]];
-document.getElementById('cards').innerHTML=ui.map(function(c,i){return '<article class="card reveal'+(c[5]?' hot':'')+'" style="--d:'+i*100+'ms"><h3>'+c[0]+'</h3><div class="pr" data-inr="'+n(c[2])+'">'+c[1]+'</div><div class="inr">'+c[2]+' INR</div><div class="del">'+c[3]+'</div><ul>'+c[4].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+ctas(c[0])+'</article>'}).join('');
+document.getElementById('cards').innerHTML=ui.map(function(c,i){return '<article class="card reveal'+(c[5]?' hot':'')+'" style="--d:'+i*100+'ms"><h3>'+c[0]+'</h3><div class="pr">'+c[1]+'</div><div class="inr">'+c[2]+' INR</div><div class="del">'+c[3]+'</div><ul>'+c[4].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+ctas(c[0])+'</article>'}).join('');
 var so=[['Basic Weekly','3 posts · 2 stories · 1 revision','$7','₹699'],['Standard Weekly','5 posts · 3 stories · 1 carousel · 2 revisions','$10','₹999'],['Basic Monthly','8 posts · 4 stories · 2 revisions','$26','₹2,499'],['Standard Monthly','12 posts · 8 stories · 2 carousels · 2 revisions','$41','₹3,999'],['Premium Monthly','16 posts · 12 stories · 4 carousels · 2 revisions','$62','₹5,999']];
-document.getElementById('list').innerHTML=so.map(function(s,i){return '<div class="item reveal" style="--d:'+i*60+'ms"><div><b>'+s[0]+'</b><span>'+s[1]+'</span></div><div class="pr" data-inr="'+n(s[3])+'">'+s[2]+'<small>'+s[3]+' INR</small></div>'+ctas(s[0])+'</div>'}).join('');
-
-(function(){
-var KEY='fxinr',TTL=36e5;
-function paint(r){
-  [].slice.call(document.querySelectorAll('.pr[data-inr]')).forEach(function(el){
-    var v=Math.round(Number(el.getAttribute('data-inr'))/r);
-    if(el.firstChild&&el.firstChild.nodeType===3)el.firstChild.nodeValue='$'+v});
-  var f=document.getElementById('fx');if(f)f.textContent='\u20b9'+r.toFixed(2)+' = $1, live rate';
-}
-function get(url,pick){return fetch(url).then(function(x){return x.json()}).then(function(j){var r=Number(pick(j));if(!(r>50&&r<200))throw 0;return r})}
-function load(force){
-  try{var c=JSON.parse(localStorage.getItem(KEY)||'null');if(!force&&c&&Date.now()-c.t<TTL){paint(c.r);return}}catch(e){}
-  get('https://open.er-api.com/v6/latest/USD',function(j){return j.rates.INR})
-  .catch(function(){return get('https://api.frankfurter.dev/v1/latest?base=USD&symbols=INR',function(j){return j.rates.INR})})
-  .then(function(r){paint(r);try{localStorage.setItem(KEY,JSON.stringify({r:r,t:Date.now()}))}catch(e){}})
-  .catch(function(){});
-}
-load();setInterval(function(){load(true)},TTL);
-})();
+document.getElementById('list').innerHTML=so.map(function(s,i){return '<div class="item reveal" style="--d:'+i*60+'ms"><div><b>'+s[0]+'</b><span>'+s[1]+'</span></div><div class="pr">'+s[2]+'<small>'+s[3]+' INR</small></div>'+ctas(s[0])+'</div>'}).join('');
 (function(){var h=document.getElementById('h1'),i=0;
 [].slice.call(h.childNodes).forEach(function(n){if(n.nodeType!==3)return;var f=document.createDocumentFragment();
 n.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return}
