@@ -98,22 +98,13 @@ nav a:not(.on):hover{color:var(--muted)}
 @media (max-width:560px){.hero p{font-size:1rem}.txt h3{font-size:1.3rem}.contact{padding-top:104px}footer{padding:72px 24px 96px}.steps{grid-template-columns:1fr}nav a{padding:0 12px;font-size:.95rem}nav ul{gap:4px}.sec{padding-top:96px}}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.js .reveal .media{clip-path:none;transition:none}.js .wi{transform:none;animation:none}.marq div,.badge .spin{animation:none}html{scroll-behavior:auto}}
 
-/* ===== custom cursor ===== */
-#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;opacity:0;transition:opacity .3s;will-change:transform;mix-blend-mode:difference}
+/* ===== figma-style cursor ===== */
+#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;opacity:0;transition:opacity .15s;will-change:transform}
 #cur.on{opacity:1}
-#cur .cb{position:absolute;left:0;top:0;width:14px;height:14px;border-radius:999px;background:#fff;display:grid;place-items:center;transform:translate(-50%,-50%) scale(var(--k,1));transition:width .45s var(--ease),height .45s var(--ease),background .3s,transform .3s var(--ease)}
-#cur .cl{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:-.02em;color:var(--fg);opacity:0;transform:scale(.6);transition:opacity .25s,transform .4s var(--ease)}
-#cur.down{--k:.82}
-#cur[data-s=link]{mix-blend-mode:multiply}
-#cur[data-s=link] .cb{width:54px;height:54px;background:var(--yellow)}
-#cur[data-s=view]{mix-blend-mode:normal}
-#cur[data-s=view] .cb{width:92px;height:44px;background:var(--fg);box-shadow:0 10px 30px rgba(0,0,0,.22)}
-#cur .cl{display:flex;align-items:center;gap:9px;white-space:nowrap}
-#cur[data-s=view] .cl{color:#fff}
-#cur .cl i{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--yellow);color:var(--fg);font-style:normal;font-size:.85rem;line-height:1;transition:transform .4s var(--ease)}
-#cur[data-s=view] .cl i{transform:rotate(0)}
-#cur .cl i{transform:rotate(-45deg)}
-#cur[data-s=view] .cl{opacity:1;transform:none;transition-delay:.1s}
+#cur .ar{position:absolute;left:0;top:0;width:30px;height:30px;min-width:30px;max-width:none;flex:none;display:block;overflow:visible;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));transform-origin:0 0;transition:transform .12s var(--ease)}
+#cur.down .ar{transform:scale(.86)}
+#cur .tag{position:absolute;left:22px;top:26px;padding:4px 11px;border-radius:8px;background:#0d99ff;color:#fff;font:600 14px/18px 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:0;white-space:nowrap;opacity:0;transform:translate(-4px,-4px) scale(.85);transform-origin:0 0;transition:opacity .15s,transform .2s var(--ease)}
+#cur[data-s] .tag{opacity:1;transform:none}
 @media (hover:hover) and (pointer:fine){html.cur,html.cur *{cursor:none!important}.badge{display:none}}
 /* ===== scroll progress ===== */
 .prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;z-index:70;pointer-events:none}
@@ -245,6 +236,13 @@ nav ul{max-width:calc(100vw - 16px)}
 .txt .ink{align-self:flex-start}
 .ink-ready .w{overflow:visible}
 .ink-svg{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+
+/* ===== extra responsive safety net ===== */
+html{min-height:100dvh}
+img,video,canvas{max-width:100%}
+@media (max-width:340px){nav a{padding:0 6px!important;font-size:.78rem!important}nav ul{gap:0!important}}
+@media (min-width:2200px){html{font-size:125%}main,footer{max-width:1600px}}
+@media (max-width:767px){html{scroll-padding-top:84px}}
 </style>
 </head>
 <body>
@@ -273,7 +271,7 @@ nav ul{max-width:calc(100vw - 16px)}
 <h3>Core skills</h3>
 <ul class="skills"><li>UI/UX &amp; Product Design</li><li>User Research &amp; Problem Solving</li><li>User Flows &amp; Information Architecture</li><li>Wireframing &amp; Prototyping</li><li>Interface Design &amp; Design Systems</li><li>Human-Centered Design</li><li>AI-Assisted Design Workflows</li></ul>
 <p>I’m continuously learning, experimenting with new design approaches, and improving my ability to create user-focused digital products.</p>
-<div class="row"><a class="btn" href="https://drive.google.com/file/d/1GDRio0MI8OArd63qB3EXWrI6wXFX-W0q/view?usp=drive_link" target="_blank" rel="noopener">View resume</a><a class="ul" href="#contact">Get in touch</a></div>
+<div class="row"><a class="btn" href="https://portfolio-ranexdesign.lovable.app/__l5e/assets-v1/163dc8f3-b2e9-4ea2-a680-d591f7776791/karansaxena_UIUX-Graphic-designerCV-4.pdf" target="_blank" rel="noopener">View resume</a><a class="ul" href="#contact">Get in touch</a></div>
 </div>
 </section>
 
@@ -300,7 +298,7 @@ n.parentNode.replaceChild(f,n)});})();
 var ind=document.getElementById('ind'),links=[].slice.call(document.querySelectorAll('nav a[data-s]')),cur=links[0];
 function move(a){var li=a.parentNode;ind.style.width=li.offsetWidth+'px';ind.style.transform='translateX('+li.offsetLeft+'px)';links.forEach(function(l){l.classList.toggle('on',l===a)});}
 function sync(){move(cur)}
-sync();window.addEventListener('resize',sync);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sync);
+sync();window.addEventListener('resize',sync);window.addEventListener('orientationchange',sync);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sync);
 var ids=['top','process','about'];
 function spy(){var y=window.scrollY+window.innerHeight*0.35,pick='top';
 ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top+window.scrollY<=y)pick=id});
@@ -324,7 +322,7 @@ var x=-100,y=-100,tx=-100,ty=-100,started=false,cur=null,curState='',card=null,v
 if(fine){
   document.documentElement.classList.add('cur');
   cur=document.createElement('div');cur.id='cur';cur.setAttribute('aria-hidden','true');
-  cur.innerHTML='<span class="cb"><span class="cl">Open</span></span>';
+  cur.innerHTML='<svg class="ar" viewBox="0 0 325 325" aria-hidden="true"><path d="M0 0L325 120L175 175L120 325Z" fill="#231f20" stroke="#fff" stroke-width="20" stroke-linejoin="round"/></svg><span class="tag">Click</span>';
   document.body.appendChild(cur);
 }
 function stateOf(el){
@@ -342,8 +340,8 @@ function setCard(c,ex,ey){
 }
 function refresh(){
   dirty=false;if(!fine||!started)return;
-  var el=document.elementFromPoint(tx,ty),s=stateOf(el);
-  if(s!==curState){curState=s;if(s)cur.setAttribute('data-s',s);else cur.removeAttribute('data-s')}
+  var el=(arguments[0]&&arguments[0].nodeType===1)?arguments[0]:document.elementFromPoint(tx,ty),s=stateOf(el);
+  if(s!==curState){curState=s;if(s){cur.setAttribute('data-s',s);cur.querySelector('.tag').textContent=s==='view'?'Open ↗':'Click'}else cur.removeAttribute('data-s')}
   setCard(el&&el.closest?el.closest('.card'):null,tx,ty);
 }
 addEventListener('mousemove',function(e){
@@ -351,7 +349,8 @@ addEventListener('mousemove',function(e){
   if(fine&&!started){x=tx;y=ty;started=true;cur.classList.add('on')}
   if(!rm){var nx=(tx/innerWidth)*2-1,ny=(ty/innerHeight)*2-1;
     shapes.forEach(function(s,i){var k=i?-1:1;s.style.setProperty('--mx',(nx*k).toFixed(3));s.style.setProperty('--my',(ny*k).toFixed(3))})}
-  refresh();
+  if(cur&&started){x=tx;y=ty;cur.style.transform='translate3d('+tx+'px,'+ty+'px,0)'}
+  refresh(e.target);
 },{passive:true});
 document.addEventListener('mouseleave',function(){if(cur)cur.classList.remove('on')});
 document.addEventListener('mouseenter',function(){if(cur&&started)cur.classList.add('on')});
@@ -381,7 +380,7 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
 
 /* main loop */
 (function loop(){
-  if(cur){var k=rm?1:.2;x+=(tx-x)*k;y+=(ty-y)*k;cur.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)'}
+  if(cur){x=tx;y=ty;cur.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)'}
   for(var i=0;i<mags.length;i++){var m=mags[i];
     m.cx+=(m.tx-m.cx)*.18;m.cy+=(m.ty-m.cy)*.18;
     if(Math.abs(m.cx)<.01&&m.tx===0)m.cx=0;if(Math.abs(m.cy)<.01&&m.ty===0)m.cy=0;
