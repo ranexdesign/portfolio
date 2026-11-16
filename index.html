@@ -328,6 +328,20 @@ html.js .about p.reveal,html.js .steps li.reveal,html.js .hero .lead{transition:
 #contact .row{margin-top:24px}
 @media (max-width:480px){#contact .row .btn{width:100%}}
 a,button{-webkit-tap-highlight-color:transparent}
+
+/* ===== bestportfolio badge: themed to match the site ===== */
+footer>.wrap:has([data-bestportfolio-badge]){margin-top:24px}
+[data-bestportfolio-badge]{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:10px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font:400 13px/1.4 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.005em;color-scheme:light dark;min-height:56px}
+:root[data-theme="light"] [data-bestportfolio-badge]{color-scheme:light}
+:root[data-theme="dark"] [data-bestportfolio-badge]{color-scheme:dark}
+[data-bestportfolio-badge] *{font-family:inherit;box-sizing:border-box}
+[data-bestportfolio-badge] a{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--mut);font-size:13px;font-weight:500;text-decoration:none;box-shadow:none;transition:color .2s,border-color .2s,background .2s}
+[data-bestportfolio-badge] a:hover,[data-bestportfolio-badge] a:focus-visible{color:var(--fg);border-color:var(--acc);background:var(--chip)}
+[data-bestportfolio-badge] a b,[data-bestportfolio-badge] a strong{color:var(--fg);font-weight:600}
+[data-bestportfolio-badge] svg{max-height:1.1em;width:auto;color:var(--acc);fill:currentColor}
+[data-bestportfolio-badge] img{max-height:28px;width:auto;border-radius:8px}
+[data-bestportfolio-badge] iframe{border:0;max-width:100%;color-scheme:normal;background:transparent}
+@media (prefers-reduced-motion:reduce){[data-bestportfolio-badge] a{transition:none}}
 </style></head><body>
 <a class="skip" href="#work">Skip to content</a>
 <div id="sp" aria-hidden="true"></div>
