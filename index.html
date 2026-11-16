@@ -328,6 +328,7 @@ html.js .about p.reveal,html.js .steps li.reveal,html.js .hero .lead{transition:
 #contact .row{margin-top:24px}
 @media (max-width:480px){#contact .row .btn{width:100%}}
 a,button{-webkit-tap-highlight-color:transparent}
+.open-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin:26px 0 0}.open-row .open{margin:0}.open-row [data-bestportfolio-badge]{min-width:0;max-width:100%}
 </style></head><body>
 <a class="skip" href="#work">Skip to content</a>
 <div id="sp" aria-hidden="true"></div>
@@ -339,7 +340,8 @@ a,button{-webkit-tap-highlight-color:transparent}
 <header class="hero"><p class="hi">Hi there! I’m Karan Saxena.</p>
 <h1>UI/UX designer shaping clear, accessible interfaces for everyday services.</h1>
 <p class="lead">With a background in graphic and web design, I turn complex problems into simple, thoughtful experiences through user research, flows and Figma prototypes.</p>
-<button class="open" id="cp" type="button" data-email="karansaxena5120@gmail.com" aria-label="Open to work. Click to copy my email"><i></i><span id="cpl">Open to work</span></button>
+<div class="open-row"><button class="open" id="cp" type="button" data-email="karansaxena5120@gmail.com" aria-label="Open to work. Click to copy my email"><i></i><span id="cpl">Open to work</span></button>
+<div data-bestportfolio-badge></div></div>
 <div class="des"><p>Skills</p><div class="mq" aria-hidden="true"><ul><li>UI Design</li><li>UX Research</li><li>Graphic Design</li><li>Web Design</li><li>Figma</li><li>Wireframing</li><li>Prototyping</li><li>Design Systems</li><li>UI Design</li><li>UX Research</li><li>Graphic Design</li><li>Web Design</li><li>Figma</li><li>Wireframing</li><li>Prototyping</li><li>Design Systems</li></ul></div></div></header>
 <main id="top"><h2 class="wh reveal" id="work">Selected work</h2><ul class="grid" aria-label="Selected work">
 <li class="reveal" style="--d:0ms"><a class="tile" href="https://www.behance.net/gallery/258460129/Trrip-Rethinking-Dining-Discovery-UIUX-Case-Study" target="_blank" rel="noopener">
@@ -522,4 +524,6 @@ if(busy){e.preventDefault();return}
 e.preventDefault();go(id,true)});
 })();
 </script>
+<!-- BestPortfolio badge -->
+<script async src="https://bestportfolio.in/badge.js" data-portfolio="karan-saxena" data-position="inline"></script>
 </body></html>
