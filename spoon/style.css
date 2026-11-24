@@ -62,3 +62,103 @@ nav .fab{width:62px;height:62px;border-radius:50%;background:var(--lime);color:#
 .sh .card{background:var(--soft)}
 @media(prefers-color-scheme:dark){.logo{filter:invert(1)}}
 button,input,select,textarea{font-family:inherit}
+
+/* =====================================================================
+   ADAPTIVE LAYER – phones, small phones, landscape, tablets, desktop
+   (added on top of the original styles, nothing above was removed)
+   ===================================================================== */
+:root{--tx:var(--ink);--rail:112px}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-height:100vh;min-height:100dvh;padding-left:env(safe-area-inset-left,0);padding-right:env(safe-area-inset-right,0)}
+img{max-width:100%}
+.num{font-size:clamp(44px,13vw,58px)}
+nav{left:max(12px,env(safe-area-inset-left,0));right:max(12px,env(safe-area-inset-right,0))}
+.stat svg{max-height:320px}
+
+/* ---- interaction polish (all devices) ---- */
+button:not(:disabled):active{transform:scale(.97)}
+:focus-visible{outline:2px solid var(--lime-d);outline-offset:2px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none}
+@media(hover:hover){
+  button{transition:transform .12s,background-color .15s,opacity .15s}
+  button:not(:disabled):hover{opacity:.88}
+  nav button:not(.fab):not(.on):hover,button.g:hover,button.x:hover,.dy:not(.on):not(:disabled):hover{background:var(--soft);opacity:1}
+  .it[data-a]:hover{background:var(--soft)}
+  nav .fab:hover{transform:scale(1.06);opacity:1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---- phones up to 400px wide: keep the 3 macro rings inside their cards ---- */
+@media(max-width:400px){
+  .mc{padding:12px}
+  .mc .rg{zoom:.9}
+}
+
+/* ---- very small phones (iPhone SE / 320px) ---- */
+@media(max-width:359px){
+  main{padding-left:12px;padding-right:12px}
+  h1{font-size:24px}
+  .card{padding:14px;border-radius:22px}
+  .hero{padding:16px}.hero .rg{zoom:.8}
+  .macros,.two{gap:6px}
+  .mc{padding:10px}.mc b{font-size:18px}.mc .mu{font-size:12px}.mc .rg{zoom:.7}
+  .q b{font-size:22px}
+  .tile{width:68px;height:68px;font-size:24px}
+  .tile.a{width:58px;height:58px;margin:5px}
+  .lk{font-size:17px}
+  .gr b{font-size:21px}
+  nav{left:8px;right:8px}
+  nav button{font-size:10px}
+  .sh{padding-left:14px;padding-right:14px}
+}
+
+/* ---- large phones / small tablets (600px+) ---- */
+@media(min-width:600px){
+  main{max-width:720px;padding-left:24px;padding-right:24px}
+  nav{max-width:560px}
+  h1{font-size:32px}
+  .card{padding:20px}
+  .macros,.two{gap:14px}
+  .hero{padding:28px}
+  .mc .rg{zoom:1.1}
+  .dy{padding:10px 0 8px}
+}
+
+/* ---- tablets and up (700px+): two-column dashboard grid ---- */
+@media(min-width:700px){
+  main{max-width:1040px}
+  #app{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+  #app>*{margin:0;min-width:0}
+  #app>.top,#app>.gr,#app>.wk,#app>.macros,#app>.sec,#app>.empty,#app>h1,#app>.stat{grid-column:1/-1}
+  /* Home */
+  #app:has(.hero){align-items:stretch}
+  #app:has(.hero)>.two,#app:has(.hero)>.card:has(>h2){grid-column:1/-1}
+  #app:has(.hero)>.top{margin-bottom:-4px}
+  /* add-food sheet becomes a centred dialog */
+  #sheet:not(:empty){align-items:center;justify-content:center;padding:24px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .sh{max-width:520px;border-radius:30px;padding:22px 24px;max-height:min(86vh,720px)}
+  .sh:before{display:none}
+}
+
+/* ---- desktop / tablet landscape / phone landscape: side navigation rail ---- */
+@media(min-width:900px),(orientation:landscape) and (max-height:540px){
+  body{padding-left:calc(var(--rail) + env(safe-area-inset-left,0))}
+  main{padding-bottom:32px}
+  nav{
+    left:calc(12px + env(safe-area-inset-left,0));right:auto;top:12px;bottom:12px;
+    width:84px;max-width:none;margin:0;
+    display:flex;flex-direction:column;justify-content:flex-start;gap:4px;
+    padding:14px 6px;border-radius:32px;overflow-y:auto
+  }
+  nav button{width:100%;padding:10px 0;border-radius:18px;flex:none}
+  nav button.on{background:var(--soft)}
+  nav .fab{order:-1;width:58px;height:58px;margin:0 auto 14px;border:0;box-shadow:0 6px 16px rgba(120,190,30,.4)}
+  nav .fab.on{background:var(--lime)}
+  #sheet:not(:empty){padding-left:calc(var(--rail) + 24px)}
+}
+
+/* ---- big desktop monitors ---- */
+@media(min-width:1400px){
+  main{max-width:1180px}
+}
+
