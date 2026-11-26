@@ -1,5 +1,0 @@
-const C='spoon-v13',F=['./','index.html','style.css','app.js','manifest.webmanifest','logo.png','fonts/inter.woff2','icon-192.png','icon-512.png','apple-touch-icon.png'];
-self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.addAll(F)))});
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>clients.claim())));
-self.addEventListener('fetch',e=>{if(new URL(e.request.url).origin!==location.origin)return;
- e.respondWith(fetch(e.request).then(r=>{const cp=r.clone();caches.open(C).then(c=>c.put(e.request,cp));return r}).catch(()=>caches.match(e.request)))});
