@@ -42,4 +42,4 @@ index.html, style.css, app.js (all logic), sw.js (offline), manifest.webmanifest
 - Food data: [Open Food Facts](https://world.openfoodfacts.org) (ODbL).
 - Font: Inter, SIL Open Font License 1.1 (see INTER-LICENSE.txt). Type sizes follow the Material 3 type scale.
 - Icons: Material Symbols (Outlined), Apache-2.0, inlined as SVG paths in app.js.
-- Inspired by OpenNutriTracker.
+  
