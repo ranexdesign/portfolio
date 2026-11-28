@@ -1,0 +1,176 @@
+# name ~ aliases | kcal | protein | carbs | fat (all per 100 g, as eaten/cooked) | servings (label=grams;...)
+# Values are rounded typical figures (USDA FoodData Central / IFCT style). Mixed dishes are approximate.
+## Grains, bread, breakfast
+Rice, white, cooked ~ chawal, steamed rice | 130 | 2.7 | 28 | 0.3 | 1 cup=158;1 katori=150
+Rice, brown, cooked | 123 | 2.7 | 25.6 | 1 | 1 cup=195
+Rice, raw (uncooked) | 365 | 7.1 | 80 | 0.7 | 1 cup=185
+Roti ~ chapati, phulka, fulka | 297 | 9.8 | 46 | 7.6 | 1 roti=40;1 small roti=30
+Paratha, plain | 326 | 7.5 | 47 | 12 | 1 paratha=80
+Naan | 290 | 9 | 50 | 5.1 | 1 naan=90
+Puri ~ poori | 390 | 8 | 48 | 18 | 1 puri=25
+Idli | 140 | 4.5 | 28 | 0.6 | 1 idli=40
+Dosa, plain | 168 | 3.9 | 29 | 3.7 | 1 dosa=85
+Masala dosa | 185 | 4 | 26 | 7.5 | 1 dosa=180
+Upma | 120 | 3 | 17 | 4.5 | 1 cup=200
+Poha | 130 | 2.5 | 24 | 2.5 | 1 cup=150
+Khichdi | 110 | 4 | 18 | 2.5 | 1 cup=220
+Oats, rolled, dry ~ oatmeal, porridge oats | 379 | 13.2 | 67.7 | 6.5 | 1/2 cup=40;1 cup=80
+Oatmeal, cooked with water | 71 | 2.5 | 12 | 1.5 | 1 cup=234
+Cornflakes | 357 | 7.5 | 84 | 0.4 | 1 bowl=30
+Granola | 471 | 10 | 64 | 20 | 1/2 cup=50
+Muesli | 340 | 10 | 66 | 5.5 | 1/2 cup=55
+Bread, white ~ toast | 266 | 8.9 | 49 | 3.3 | 1 slice=28
+Bread, whole wheat ~ brown bread, wholemeal | 252 | 12.3 | 42.7 | 3.5 | 1 slice=32
+Bagel, plain | 250 | 10 | 49 | 1.5 | 1 bagel=105
+Croissant | 406 | 8.2 | 45.8 | 21 | 1 croissant=57
+Pancake, plain | 227 | 6.4 | 28 | 10 | 1 pancake=40
+Tortilla, flour ~ wrap | 312 | 8.2 | 51.6 | 7.8 | 1 tortilla=45
+Pasta, cooked ~ spaghetti, macaroni, penne | 158 | 5.8 | 31 | 0.9 | 1 cup=140
+Noodles, instant, prepared ~ ramen, maggi | 138 | 4.5 | 19.8 | 4.6 | 1 cup=170
+Noodles, egg, cooked | 138 | 4.5 | 25 | 2.1 | 1 cup=160
+Quinoa, cooked | 120 | 4.4 | 21.3 | 1.9 | 1 cup=185
+Couscous, cooked | 112 | 3.8 | 23 | 0.2 | 1 cup=157
+Rice, fried | 163 | 4 | 24 | 5.8 | 1 cup=198
+Biryani, chicken | 165 | 8 | 20 | 5.5 | 1 plate=350
+Biryani, vegetable | 150 | 3.5 | 24 | 4.5 | 1 plate=330
+Atta (whole wheat flour) | 340 | 13.2 | 72 | 2.5 | 1 cup=120
+All-purpose flour (maida) | 364 | 10.3 | 76.3 | 1 | 1 cup=125
+Popcorn, air-popped | 387 | 12.9 | 77.8 | 4.5 | 1 cup=8
+## Potato & mixed dishes
+Potato, boiled | 87 | 1.9 | 20.1 | 0.1 | 1 medium=170
+Potato, baked | 93 | 2.5 | 21 | 0.1 | 1 medium=173
+Mashed potato | 113 | 2 | 16 | 4.2 | 1 cup=210
+French fries ~ chips, fries | 312 | 3.4 | 41 | 15 | 1 medium serving=117
+Sweet potato, baked | 90 | 2 | 20.7 | 0.2 | 1 medium=114
+Pizza, cheese ~ pizza slice | 266 | 11.4 | 33.3 | 9.8 | 1 slice=107
+Cheeseburger | 295 | 15 | 30 | 12 | 1 burger=120
+Hamburger | 254 | 13 | 31 | 9 | 1 burger=110
+Samosa | 262 | 3.5 | 25 | 17 | 1 samosa=60
+Sandwich, cheese | 290 | 12 | 30 | 13 | 1 sandwich=130
+Sandwich, chicken | 230 | 15 | 24 | 8 | 1 sandwich=170
+Sambar | 50 | 2.5 | 7 | 1.5 | 1 cup=250
+Rasam | 25 | 1 | 4 | 0.6 | 1 cup=240
+Curd rice | 120 | 3.5 | 18 | 3.5 | 1 cup=200
+## Indian curries and dals (home style, approximate)
+Dal, cooked (lentil curry, tadka) ~ daal, dhal | 105 | 6.2 | 15 | 2.5 | 1 katori=150;1 cup=240
+Lentils, boiled | 116 | 9 | 20.1 | 0.4 | 1 cup=198
+Chole (chickpea curry) ~ chana masala | 150 | 7 | 20 | 4.5 | 1 katori=150
+Rajma (kidney bean curry) | 120 | 6 | 16 | 3.5 | 1 katori=150
+Chicken curry | 140 | 12 | 4 | 8 | 1 katori=150;1 cup=240
+Butter chicken | 150 | 11 | 6 | 9 | 1 cup=240
+Paneer butter masala | 190 | 8 | 8 | 14 | 1 katori=150
+Palak paneer | 147 | 7 | 5 | 11 | 1 katori=150
+Mixed vegetable curry ~ sabzi, sabji | 89 | 2 | 9 | 5 | 1 katori=120
+Aloo gobi | 95 | 2.5 | 11 | 4.5 | 1 katori=120
+Egg curry | 120 | 8 | 4 | 8 | 1 katori=150
+Fish curry | 110 | 12 | 3 | 5.5 | 1 katori=150
+## Protein
+Egg, whole, boiled | 155 | 12.6 | 1.1 | 10.6 | 1 large egg=50
+Egg, fried | 196 | 13.6 | 0.8 | 14.8 | 1 large egg=46
+Egg white | 52 | 10.9 | 0.7 | 0.2 | 1 egg white=33
+Omelette, plain | 154 | 10.6 | 0.6 | 11.7 | 1 omelette (2 eggs)=120
+Egg, scrambled | 149 | 10 | 1.6 | 11 | 1 cup=220
+Chicken breast, cooked, skinless | 165 | 31 | 0 | 3.6 | 1 breast=172;100 g=100
+Chicken thigh, cooked, skinless | 209 | 26 | 0 | 10.9 | 1 thigh=90
+Chicken, fried | 246 | 19 | 9 | 15 | 1 piece=100
+Beef steak, cooked | 250 | 26 | 0 | 15 | 1 steak=170
+Ground beef, cooked (85% lean) ~ mince, keema | 250 | 26 | 0 | 15 | 1 patty=85
+Lamb / mutton, cooked | 294 | 25 | 0 | 21 | 100 g=100
+Pork chop, cooked | 220 | 27 | 0 | 12 | 1 chop=145
+Bacon, cooked | 541 | 37 | 1.4 | 42 | 1 slice=8
+Ham, sliced | 145 | 21 | 1.5 | 5.5 | 1 slice=28
+Sausage, pork, cooked | 325 | 19 | 1 | 27 | 1 link=50
+Salmon, cooked | 206 | 22.1 | 0 | 12.4 | 1 fillet=154
+Tuna, canned in water | 116 | 25.5 | 0 | 0.8 | 1 can=142
+Cod, cooked | 105 | 22.8 | 0 | 0.9 | 1 fillet=180
+Shrimp / prawns, cooked | 99 | 24 | 0.2 | 0.3 | 100 g=100
+Fish, fried | 232 | 17 | 11 | 13 | 1 fillet=120
+Tofu, firm | 144 | 17.3 | 2.8 | 8.7 | 1/2 cup=126
+Tempeh | 192 | 20.3 | 7.6 | 10.8 | 100 g=100
+Paneer | 265 | 18 | 1.2 | 20.8 | 1 cube=20;100 g=100
+Soya chunks, dry | 345 | 52 | 33 | 0.5 | 1/2 cup=30
+Edamame | 121 | 11.9 | 8.9 | 5.2 | 1 cup=155
+Chickpeas, boiled ~ chana, garbanzo | 164 | 8.9 | 27.4 | 2.6 | 1 cup=164
+Kidney beans, boiled ~ rajma | 127 | 8.7 | 22.8 | 0.5 | 1 cup=177
+Black beans, boiled | 132 | 8.9 | 23.7 | 0.5 | 1 cup=172
+Hummus | 166 | 7.9 | 14.3 | 9.6 | 2 tbsp=30
+Protein powder, whey | 400 | 80 | 7 | 6 | 1 scoop=30
+## Dairy
+Milk, whole | 61 | 3.2 | 4.8 | 3.3 | 1 cup=244;1 glass=200
+Milk, 2% (semi-skimmed) | 50 | 3.3 | 4.8 | 2 | 1 cup=244
+Milk, skim | 34 | 3.4 | 5 | 0.1 | 1 cup=245
+Curd / plain yogurt, whole milk ~ dahi | 61 | 3.5 | 4.7 | 3.3 | 1 katori=100;1 cup=245
+Greek yogurt, plain, nonfat | 59 | 10.2 | 3.6 | 0.4 | 1 container=170
+Greek yogurt, plain, whole milk | 97 | 9 | 4 | 5 | 1 container=170
+Cottage cheese | 98 | 11.1 | 3.4 | 4.3 | 1/2 cup=113
+Cheddar cheese | 403 | 24.9 | 1.3 | 33.1 | 1 slice=28;1 oz=28
+Mozzarella | 280 | 28 | 3.1 | 17.1 | 1 oz=28
+Cream cheese | 342 | 5.9 | 4.1 | 34 | 1 tbsp=14
+Butter | 717 | 0.9 | 0.1 | 81 | 1 tbsp=14;1 tsp=5
+Ghee | 900 | 0 | 0 | 100 | 1 tsp=5;1 tbsp=14
+Ice cream, vanilla | 207 | 3.5 | 23.6 | 11 | 1/2 cup=66
+Lassi, sweet | 90 | 2.5 | 14 | 2.5 | 1 glass=250
+## Fats, nuts, seeds, sweeteners
+Olive oil ~ cooking oil, vegetable oil | 884 | 0 | 0 | 100 | 1 tbsp=13.5;1 tsp=4.5
+Peanut butter | 588 | 25 | 20 | 50 | 1 tbsp=16
+Almonds | 579 | 21.2 | 21.6 | 49.9 | 1 handful=28;10 almonds=12
+Peanuts | 567 | 25.8 | 16.1 | 49.2 | 1 handful=28
+Walnuts | 654 | 15.2 | 13.7 | 65.2 | 1 handful=28
+Cashews | 553 | 18.2 | 30.2 | 43.9 | 1 handful=28
+Chia seeds | 486 | 16.5 | 42.1 | 30.7 | 1 tbsp=12
+Mayonnaise | 680 | 1 | 0.6 | 75 | 1 tbsp=14
+Ketchup | 101 | 1 | 27 | 0.1 | 1 tbsp=17
+Soy sauce | 53 | 8 | 4.9 | 0.6 | 1 tbsp=16
+Sugar, white | 387 | 0 | 100 | 0 | 1 tsp=4.2;1 tbsp=12.6
+Honey | 304 | 0.3 | 82.4 | 0 | 1 tbsp=21;1 tsp=7
+Jaggery ~ gur | 383 | 0.4 | 98 | 0.1 | 1 tsp=5
+## Fruit
+Apple | 52 | 0.3 | 13.8 | 0.2 | 1 medium=182
+Banana | 89 | 1.1 | 22.8 | 0.3 | 1 medium=118;1 small=101
+Orange | 47 | 0.9 | 11.8 | 0.1 | 1 medium=131
+Mango | 60 | 0.8 | 15 | 0.4 | 1 cup pieces=165
+Grapes | 69 | 0.7 | 18.1 | 0.2 | 1 cup=151
+Strawberries | 32 | 0.7 | 7.7 | 0.3 | 1 cup=152
+Blueberries | 57 | 0.7 | 14.5 | 0.3 | 1 cup=148
+Watermelon | 30 | 0.6 | 7.6 | 0.2 | 1 cup=152
+Papaya | 43 | 0.5 | 10.8 | 0.3 | 1 cup=145
+Pineapple | 50 | 0.5 | 13.1 | 0.1 | 1 cup=165
+Pear | 57 | 0.4 | 15.2 | 0.1 | 1 medium=178
+Peach | 39 | 0.9 | 9.5 | 0.3 | 1 medium=150
+Pomegranate seeds | 83 | 1.7 | 18.7 | 1.2 | 1/2 cup=87
+Guava | 68 | 2.6 | 14.3 | 1 | 1 fruit=55
+Avocado | 160 | 2 | 8.5 | 14.7 | 1/2 avocado=100
+Dates, medjool | 277 | 1.8 | 75 | 0.2 | 1 date=24
+Raisins | 299 | 3.1 | 79.2 | 0.5 | 1 small box=43
+## Vegetables
+Broccoli, cooked | 35 | 2.4 | 7.2 | 0.4 | 1 cup=156
+Spinach, raw ~ palak | 23 | 2.9 | 3.6 | 0.4 | 1 cup=30
+Carrot, raw | 41 | 0.9 | 9.6 | 0.2 | 1 medium=61
+Tomato | 18 | 0.9 | 3.9 | 0.2 | 1 medium=123
+Cucumber | 15 | 0.7 | 3.6 | 0.1 | 1 cup=104
+Onion | 40 | 1.1 | 9.3 | 0.1 | 1 medium=110
+Cauliflower, cooked | 23 | 1.8 | 4.1 | 0.5 | 1 cup=124
+Cabbage | 25 | 1.3 | 5.8 | 0.1 | 1 cup=89
+Green peas, boiled | 84 | 5.4 | 15.6 | 0.2 | 1 cup=160
+Bell pepper (capsicum) | 31 | 1 | 6 | 0.3 | 1 medium=119
+Sweet corn, cooked | 96 | 3.4 | 21 | 1.5 | 1 ear=90
+Mushrooms | 22 | 3.1 | 3.3 | 0.3 | 1 cup=70
+Okra (bhindi), cooked | 22 | 1.9 | 4.5 | 0.2 | 1 cup=160
+Eggplant (brinjal), cooked | 35 | 0.8 | 8.7 | 0.2 | 1 cup=99
+Lettuce | 15 | 1.4 | 2.9 | 0.2 | 1 cup=36
+## Drinks
+Tea with milk and sugar ~ chai, masala chai | 45 | 1.3 | 7 | 1.3 | 1 cup=150
+Coffee, black | 1 | 0.1 | 0 | 0 | 1 cup=240
+Latte (whole milk) | 55 | 3 | 4.6 | 2.9 | 1 small=240;1 large=470
+Orange juice | 45 | 0.7 | 10.4 | 0.2 | 1 cup=248
+Cola | 42 | 0 | 10.6 | 0 | 1 can=355
+Beer | 43 | 0.5 | 3.6 | 0 | 1 bottle=355
+Red wine | 85 | 0.1 | 2.6 | 0 | 1 glass=150
+Coconut water | 19 | 0.7 | 3.7 | 0.2 | 1 cup=240
+## Snacks & sweets
+Potato chips (crisps) | 536 | 7 | 53 | 35 | 1 small bag=28
+Chocolate, dark (70%) | 598 | 7.8 | 45.9 | 42.6 | 1 square=10;1 bar=100
+Chocolate, milk | 535 | 7.6 | 59.4 | 29.7 | 1 square=10
+Cookie, chocolate chip | 488 | 5.4 | 64 | 24 | 1 cookie=30
+Donut, glazed | 421 | 4.9 | 51 | 22 | 1 donut=60
+Gulab jamun | 371 | 4 | 55 | 15 | 1 piece=40
